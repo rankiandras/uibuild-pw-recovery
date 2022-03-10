@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* ------------------------- END OF CSS RESET ------------------------- */
+
+
+div {
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 250px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: #006837;
+  text-transform: uppercase;
+}
+
+div div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 520px;
+  height: auto;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #467745;
+  background-color: #F9C582;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+div p:nth-child(2) {
+  font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 480px;
+  width: 100%;
+  height: 64px;
+  color: #98A991;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  width: 120px;
+  height: 120px;
+  background-color: #F9C582;
+  color: #006837;
+  border-radius: 48%;
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  div div {
+    width: 100%;
+  }
+
+  input {
+    width: 100%-40px;
+  }
+}
